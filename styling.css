@@ -1,0 +1,143 @@
+body, html {
+    height: 100%;
+    margin: 0; 
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+#mainNav {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+#mainNav .nav-link {
+    color: white;
+}
+
+#mainNav .nav-link:hover {
+    color: black;
+}
+
+#mainNav .navbar-brand {
+    color: black;
+}
+
+.navbar.scroll {
+    background: rgb(80, 80, 80);
+    transition: background 500ms;
+}
+
+.pimage1, .pimage2, .pimage3, .pimage4, .pimage5, .pimage6 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    /* Setting 'background-attachment' to 'fixed' is what gives the parallax effect.*/
+    /* To return the scroll style to normal, just change 'background attachment' to 'scroll'. */
+}
+
+.pimage1 {
+    background-image: url(imgs/ChinaGlobe.jpg);
+    min-height: 100%;
+}
+
+.pimage2 {
+    background-image: url(imgs/HKIsland.jpg);
+    min-height: 100%;
+}
+
+.pimage3 {
+    background-image: url(imgs/Terracotta\ Army.jpg);
+    min-height: 100%;
+}
+
+.pimage4 {
+    background-image: url(imgs/HKIsland.jpg);
+    min-height: 100%;
+}
+
+/* Skylar's advice ---------------------------------------*/
+
+@keyframes transition-bg {
+    0% { background-image: url(imgs/Beijing.jpg) }
+    27% { background-image: url(imgs/ChinaGlobe.jpg) }
+    33% { background-image: url(imgs/HKIsland.jpg) }
+    60% { background-image: url(imgs/ChinaGlobe.jpg) }
+    66% { background-image: url(imgs/GreatWall.jpg) }
+    94% { background-image: url(imgs/Beijing.jpg) }
+    100% { background-image: url(imgs/Terracotta\ Army.jpg) }
+  }
+  
+  .transition-bg-img {
+    
+    height: 100%;
+    width: 100%;  
+    
+    background-size: cover;
+    animation: 15s transition-bg infinite;
+  }
+
+/*--------------------------------------------------------*/
+
+.section {
+    text-align: center;
+    padding: 50px 250px; /* First number is top to bottom. Second is left to right.*/
+}
+
+.overtext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 36px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.overtext > .subtext {
+    font-size: 18px;
+    top: 60%;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 36px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: transparent;
+    padding: 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.wrapper > div.left {
+    background: #282e34;
+    padding: 50px 80px;
+    color: #f4f4f4;
+}
+
+.wrapper > div.right {
+    background: #282e34;
+    padding: 20% 80px; 
+    text-align: center;
+    color: #f4f4f4;
+}
