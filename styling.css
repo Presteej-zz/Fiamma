@@ -22,7 +22,7 @@ body, html {
 }
 
 #mainNav .navbar-brand {
-    color: black;
+    color: white;
 }
 
 .navbar.scroll {
@@ -49,17 +49,22 @@ body, html {
 }
 
 .pimage2 {
-    background-image: url(imgs/HKIsland.jpg);
+    background-image: url(imgs/ChinaGreatWall.jpg);
     min-height: 100%;
 }
 
 .pimage3 {
-    background-image: url(imgs/Terracotta\ Army.jpg);
+    background-image: url(imgs/TerracottaArmy.jpg);
     min-height: 100%;
 }
 
 .pimage4 {
-    background-image: url(imgs/HKIsland.jpg);
+    background-image: url(imgs/ShanghaiSkyline.jpg);
+    min-height: 100%;
+}
+
+.pimage5 {
+    background-image: url(imgs/StockChineseFamily.jpg);
     min-height: 100%;
 }
 
@@ -96,16 +101,9 @@ body, html {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
     font-size: 36px;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.overtext > .subtext {
-    font-size: 18px;
-    top: 60%;
 }
 
 .ptext {
