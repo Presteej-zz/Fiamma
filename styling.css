@@ -64,7 +64,12 @@ body, html {
 }
 
 .pimage5 {
-    background-image: url(imgs/StockChineseFamily.jpg);
+    background-image: url(imgs/FiammaBoys.jpg);
+    min-height: 100%;
+}
+
+.pimage6 {
+    background-image: url(imgs/WuzhenVisCenter.jpg);
     min-height: 100%;
 }
 
