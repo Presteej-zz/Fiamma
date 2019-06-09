@@ -127,20 +127,11 @@ body, html {
     padding: 30px;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 50% 50%;
+/*-------------------------------------------------------   FOOTER*/
+
+footer {
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 10px 20px;
 }
 
-.wrapper > div.left {
-    background: #282e34;
-    padding: 50px 80px;
-    color: #f4f4f4;
-}
-
-.wrapper > div.right {
-    background: #282e34;
-    padding: 20% 80px; 
-    text-align: center;
-    color: #f4f4f4;
-}
