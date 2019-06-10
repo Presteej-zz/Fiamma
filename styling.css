@@ -1,4 +1,4 @@
-body, html {
+body, html, .about-us {
     height: 100%;
     margin: 0; 
     font-size: 16px;
@@ -30,7 +30,7 @@ body, html {
     transition: background 500ms;
 }
 
-.pimage1, .pimage2, .pimage3, .pimage4, .pimage5, .pimage6 {
+.pimage1, .pimage2, .pimage3, .pimage4, .pimage5, .pimage6, .pimage7 {
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -70,6 +70,11 @@ body, html {
 
 .pimage6 {
     background-image: url(imgs/WuzhenVisCenter.jpg);
+    min-height: 100%;
+}
+
+.pimage7 {
+    background-image: url(imgs/Hangzhou.jpg);
     min-height: 100%;
 }
 
@@ -133,5 +138,127 @@ footer {
     background-color: #000;
     color: #FFFFFF;
     padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    font-style: "Lato", sans-serif;
 }
 
+/*----------------------------------------------------------------  About  -----------------*/
+
+.about-us {
+    background-color: gray;
+}
+
+.about-us footer {
+    position: absolute;
+}
+
+.about-us-banner {
+    position: relative;
+}
+
+.about-banner-img {
+    margin: 80px 115px;
+    width: 60%;
+}
+
+.about-banner-img img {
+    width: 100%;
+    margin-bottom: -80px;
+}
+
+.about-banner-title {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.about-banner-title h1 {
+    font-size: 55px;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: #ffffff;
+    line-height: 70px;
+    padding: 0px 10px 0px 10px;
+}
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------  Gallery --------*/
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    padding: 0; 
+    margin: 0px;
+}
+
+.gallery slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(imgs/WuzhenVisCenter.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+slide:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(imgs/TerracottaArmy.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+slide:nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(imgs/ShanghaiSkyline.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+slide:nth-child(4) {
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(imgs/ChinaGreatWall.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+slide h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #FFFFFF;
+}
+
+@keyframes slide {
+
+    0% {left: 100%; width: 100%;}
+    5% {left: 0%;}
+    25% {left: 0%;}
+    30% {left: -100%; width: 100%;}
+    30.0001% {left: -100%; width: 0%;}
+    100% {left: 100%; width: 0%;}
+}
