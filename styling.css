@@ -78,29 +78,6 @@ body, html, .about-us {
     min-height: 100%;
 }
 
-/* Skylar's advice ---------------------------------------*/
-
-@keyframes transition-bg {
-    0% { background-image: url(imgs/Beijing.jpg) }
-    27% { background-image: url(imgs/ChinaGlobe.jpg) }
-    33% { background-image: url(imgs/HKIsland.jpg) }
-    60% { background-image: url(imgs/ChinaGlobe.jpg) }
-    66% { background-image: url(imgs/GreatWall.jpg) }
-    94% { background-image: url(imgs/Beijing.jpg) }
-    100% { background-image: url(imgs/Terracotta\ Army.jpg) }
-  }
-  
-  .transition-bg-img {
-    
-    height: 100%;
-    width: 100%;  
-    
-    background-size: cover;
-    animation: 15s transition-bg infinite;
-  }
-
-/*--------------------------------------------------------*/
-
 .section {
     text-align: center;
     padding: 50px 250px; /* First number is top to bottom. Second is left to right.*/
@@ -134,24 +111,23 @@ body, html, .about-us {
 
 /*-------------------------------------------------------   FOOTER*/
 
-footer {
+.footer {
     background-color: #000;
     color: #FFFFFF;
     padding: 10px 20px;
     bottom: 0;
     width: 100%;
     font-style: "Lato", sans-serif;
+    font-size: 1rem;
 }
 
 /*----------------------------------------------------------------  About  -----------------*/
 
 .about-us {
     background-color: gray;
+    color: black;
 }
 
-.about-us footer {
-    position: absolute;
-}
 
 .about-us-banner {
     position: relative;
@@ -181,7 +157,22 @@ footer {
     line-height: 70px;
     padding: 0px 10px 0px 10px;
 }
-/*---------------------------------------------------------------------------------*/
+
+.description-us {
+    padding-top: 100px;
+}
+/*----------------------------------------------------------------Blog ---------*/
+
+.blog {
+    background-color: gray;
+}
+
+.apology {
+    padding-top: 200px;
+    color: black;
+}
+
+
 /*---------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
